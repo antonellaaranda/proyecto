@@ -46,8 +46,7 @@ ul{
     height: 150px; 
    
 } 
-.div-logo{
-    height: 50px;
+.div-logo{   
     display: flex;
     justify-content: center;
     align-content: center;
@@ -61,35 +60,25 @@ ul{
 }
 
 /* propiedades links */
-a {
+a{
     outline: none;
     text-decoration: none;
     
-  }
+}
   
-  a:link {
+a:link {
     color: black;
   }
   
-  a:visited {
+a:visited {
     color: black;
-  }
-   /* 
-  a:focus {
-    border-bottom: 1px solid black;
-    background:;
-  }
-   */
-  a:hover {
+}
+ 
+.item-menu:hover {
     border-bottom: 1px solid black;
     
-  }
-   /* 
-  a:active {
-    background: ;
-    color: ;
-  }
-*/
+}
+
 
 
 /************** main****************/
@@ -102,7 +91,7 @@ a {
 /**************menu**************/
 .div-menu{
    
-    height: 50px;
+    height: 100px;
     font-size: 20px;    
     display: flex;
     flex-direction: row;
@@ -188,17 +177,30 @@ a {
 
 
 /***************** slide****************************** */
-.div-slide{
-    width: 100%;
-    height: 100%;
 
+
+.div-slide{
+    
 }
+.carrusel li{
+    width: 100%;
+   
+}
+.img-slide{
+    width: 100%;
+}
+.carrusel{
+    display: flex;   
+}
+
+/******
 .img-slide{
     width: 100%;
     height: 100%;
    
     object-fit: contain;
 }
+********/
 /********************mediaquery slide************/
 @media screen and (max-width: 450px ) {
     .img-slide{
@@ -234,7 +236,7 @@ a {
     font-family: 'Poppins', sans-serif;
     width: auto;
   display: flex;
-  margin: 100px auto ;
+  margin: 100px;
   justify-content: center;
 }
 .parrafo{
@@ -278,7 +280,7 @@ a {
         height: 50px;
     }
 
-     .div-parrafo{
+    .div-parrafo{
             margin: 50px auto;
      }
      .parrafo{
@@ -324,17 +326,14 @@ a {
 .section-nosotros{
     height: auto;
     background-color: antiquewhite;
-    font-family: 'Poppins', sans-serif;
-     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 100%;
-    justify-items: center;   
-    
+    font-family: 'Poppins', sans-serif;       
 }
 .div-h1{
-    display: grid;
-    align-content: center;    
-    margin-top: 20px;   
+    display: flex;
+    height: 100px;
+    justify-content: center;  
+    align-items: center;  
+  
 }
 
 .h1-nosotros{    
@@ -345,22 +344,21 @@ a {
     display: flex;
     align-items: center;
     width: 60%;
+    margin: auto;
     height: 200px;       
     font-size: 20px;   
 }
 
 
 .nosotros-slide{
-   width: 100%;
-}
-.img-nosotros{
-   width: 100%;
-   height: 100%;
-   object-fit: contain;
-}
-
-
+    border: solid 2px black;
+    display: flex;
+    flex-direction: row;
     
+}
+.carrusel-nosotros{
+    display: flex;
+}   
 
 /**************** media query NOSOTROS*********************/
 
@@ -370,9 +368,7 @@ a {
         font-size: 15px;
         
     }
-    .div-parrafo{
-        height: 100px;
-    }
+    
 }
 
 @media screen and (min-width:451px) and (max-width:960px) {
@@ -381,3 +377,6 @@ a {
    } 
 
 }
+
+
+/****************************TALLES.html**********************************/
