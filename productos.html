@@ -9,39 +9,43 @@
 </head>
 <body> 
     <header class="header">
-        <div class="logo"><!--en la siguiente imagen va el logo ,que aun no esta elegido-->
-            <img class="img-logo" src="" alt="logo"/>
-        </div>
-        <div class="div-iconos">
-            <ul>
-                <li>
-                    <img src="images/search.png" alt="icono de busqueda"/>
-                </li>
-                <li>
-                    <img src="images/user.png" alt="icono de usuario"/>
-                </li>
-                <li>
-                    <img src="images/shopping-bag.png" alt="icono de bolsa"/>
-                </li>
-            </ul>
-        </div>
-        <div class="div-menu">    
-            <nav>
-                <ul>
-                    <li>
-                       <a href="index.html">home</a> 
+        <section class="section-logo">
+            <nav class="nav-logo">               
+                <div class="div-iconos">
+                    <ul class="li-iconos">
+                        <li>
+                            <img src="images/search.png" alt="icono de busqueda"/>
+                        </li>
+                        <li>
+                            <img src="images/user.png" alt="icono de usuario"/>
+                        </li>
+                        <li>
+                            <img src="images/shopping-bag.png" alt="icono de bolsa"/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="div-logo">
+                    <img class="img-logo" src="images/traingulo150.png" alt="logo"/>
+                </div>
+            </nav>
+        </section>
+        <div class="div-menu"> 
+            <nav class="nav-menu">
+                <ul class="lista-menu">
+                    <li class="item-menu">
+                       <a href="index.html">Home</a> 
                     </li>
-                    <li>
-                        <a href="productos.html">productos</a>
+                    <li class="item-menu">
+                        <a href="productos.html">Productos</a>
                     </li>
-                    <li>
-                        <a href="nosotros.html">nosotros</a>
+                    <li class="item-menu">
+                        <a href="nosotros.html">Nosotros</a>
                     </li>
-                    <li>
-                        <a href="talles.html">talles</a>
+                    <li class="item-menu">
+                        <a href="talles.html">Talles</a>
                     </li>
-                    <li>
-                        <a href="contacto.html">contacto</a>
+                    <li class="item-menu">
+                        <a href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -84,20 +88,38 @@
       </ul>
     </main>   
     <footer class="footer">
-        <div>
-            <ul>
-                <li class="lista-footer" >
-                    <a href="productos.html" >productos </a>
+        <div class="div-footer">
+            <ul class="lista-footer">
+               
+                <li class="item-footer"><!--sobre los dos siguientes puntos de la lista aun tengo que crear html-->
+                    <a href="envios">Envios</a>
                 </li>
-                <li class="lista-footer"><!--sobre los dos siguientes puntos de la lista aun tengo que crear html-->
-                    <a href="envios">envios</a>
+                <li class="item-footer">
+                    <a href="preguntas frecuentes">Preguntas frecuentes</a>
                 </li>
-                <li class="lista-footer">
-                    <a href="preguntas frecuentes">preguntas frecuentes</a>
+                <li class="item-footer">
+                    <a href="productos.html" >Productos </a>
                 </li>
+            </ul>
+            <p class="copyright"> 
+                Copyright@
+            </p>
+        </div>
+        <div class="div-redes">
+            <ul class="footer-redes">
+                <li>
+                    <img src="images/correo-electronico.png" alt="">
+                </li>
+                <li>
+                    <img src="images/facebook.png" alt="">
+                </li>
+                <li>
+                    <img src="images/instagram.png" alt="">
+                </li>
+
             </ul>
         </div>
 
-    </footer>     
+    </footer>    
 </body>
 </html>

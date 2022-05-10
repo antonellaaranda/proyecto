@@ -31,7 +31,7 @@ ul{
 /*********************header*****************/
 .header{
     grid-area: header ;
-    background-color: rgb(246, 205, 171) ;
+    background-image: linear-gradient( rgb(148, 133, 121), white) ;
     font-family: 'Poppins', sans-serif;
     height: auto;
     width: 100%;
@@ -59,7 +59,7 @@ ul{
 
 }
 
-/* propiedades links */
+/* propiedades links 
 a{
     outline: none;
     text-decoration: none;
@@ -74,10 +74,6 @@ a:visited {
     color: black;
 }
  
-.item-menu:hover {
-    border-bottom: 1px solid black;
-    
-}
 
 
 
@@ -85,9 +81,37 @@ a:visited {
 .main{
     grid-area: main;
 }
+/**
+.item-menu:hover {
+    border-bottom: 1px solid black;
+    
+}
+
+**/
 
 
 
+ a {
+    display: inline-block;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    }
+
+a:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+    }
+a:hover:after {
+    width: 100%;
+    background: #333;
+    }
+
+  
 /**************menu**************/
 .div-menu{
    
@@ -130,58 +154,24 @@ a:visited {
 }
 
 
-/******************footer*******************/
-.footer{
-    grid-area: footer;
-    background-color: rgb(246, 205, 171) ;
-    height: 150px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.div-footer{   
-    font-family: 'Poppins', sans-serif;
-    display: grid;
-    grid-template-rows: auto auto;
-    
-}
-.lista-footer{
-    margin: 20px 20px;  
-    justify-self: start;
-    align-self: flex-start;
-    
-}
-.copyright{
-    font-size: 10px;
-  
-    margin-left: 20px;
-    align-self: flex-end;
 
-}
-
-.div-redes{
-    display: grid;
-}
-
-.footer-redes{
-    font-family: 'Poppins', sans-serif;
-    margin: 20px 20px;   
-    justify-self: end;
-    align-self: flex-end;
-
-}
-/****************mediaquery footer********/
-.lista-footer{
-    font-size: 15px;
-}
 
 
 /***************** slide****************************** */
-
-
+.seccion-slide{
+    background-color: antiquewhite;
+}
+.div-slide img{
+  max-width: 100%;
+   
+}
 .div-slide{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
     
 }
+
 .carrusel li{
     width: 100%;
    
@@ -190,8 +180,20 @@ a:visited {
     width: 100%;
 }
 .carrusel{
-    display: flex;   
+    display: flex;
+    
+   width: 300%;
+   animation: carrusel 15s infinite alternate ;
 }
+@keyframes carrusel{
+0%{ margin-left: 0;}  
+33.3%{margin-left: 0;}
+38.3%{margin-left: -100%;}
+71.6%{margin-left: -100%;}
+76.6%{margin-left: -200%;}
+100%{margin-left: -200%;}
+}
+
 
 /******
 .img-slide{
@@ -266,6 +268,10 @@ a:visited {
     object-fit: contain;
     
 }
+.img:hover{
+    transform: scale(1.2);
+
+}
 .item-categoria{
     width: 90%;
 }
@@ -321,6 +327,40 @@ a:visited {
         }
 
     }    
+    /******************footer*******************/
+.footer{
+    grid-area: footer;
+    background-image: linear-gradient( rgb(148, 133, 121), white) ;
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.div-footer{   
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    
+    
+}
+.lista-footer{
+    margin: 20px 20px;  
+    justify-self: start;
+    align-self: flex-start;
+    
+}
+.copyright{
+    font-size: 10px;
+  
+    margin-left: 20px;
+    align-self: flex-end;
+
+}
+
+
+/****************mediaquery footer********/
+.lista-footer{
+    font-size: 15px;
+}
     
 /*******************************  NOSOTROS.HTML******************************** */
 .section-nosotros{
@@ -350,15 +390,39 @@ a:visited {
 }
 
 
+
+.nosotros-slide img{
+  max-width: 100%;
+   
+}
 .nosotros-slide{
-    border: solid 2px black;
-    display: flex;
-    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
     
 }
+
+.carrusel-nosotros li{
+    width: 100%;
+   
+}
+.img-nosotros{
+    width: 100%;
+}
 .carrusel-nosotros{
-    display: flex;
-}   
+    display: flex; 
+   width: 300%;
+   animation: carrusel 15s infinite alternate ;
+}
+@keyframes carrusel{
+0%{ margin-left: 0;}  
+33.3%{margin-left: 0;}
+38.3%{margin-left: -100%;}
+71.6%{margin-left: -100%;}
+76.6%{margin-left: -200%;}
+100%{margin-left: -200%;}
+}
+
 
 /**************** media query NOSOTROS*********************/
 
