@@ -35,10 +35,12 @@ ul{
     font-family: 'Poppins', sans-serif;
     height: auto;
     width: 100%;
-   
+    
 }
 
-
+.navbar-flex{
+    display: flex;
+}
 
 /***************** navegador logo/iconos**************/   
 
@@ -90,8 +92,7 @@ a:visited {
 **/
 
 
-
- a {
+ a{
     display: inline-block;
     position: relative;
     color: #333;
@@ -161,10 +162,7 @@ a:hover:after {
 .seccion-slide{
     background-color: antiquewhite;
 }
-.div-slide img{
-  max-width: 100%;
-   
-}
+
 .div-slide{
     width: 80%;
     margin: auto;
@@ -444,3 +442,48 @@ a:hover:after {
 
 
 /****************************TALLES.html**********************************/
+.seccion-talles{
+    background-color: antiquewhite;
+  
+   
+}
+
+.h1-talles{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.div-talles{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/************************CONTACTO.html*******************/
+.seccion-contacto{
+    background-color: antiquewhite;
+}
+.imagen-contacto{
+    width: 70%;  
+    margin: auto;
+}
+.img-contacto{    
+    width: 100%;
+}
+
+
+.div-contacto{
+    height: 300px; 
+    display: flex;
+    justify-content: center;  
+    
+}
+
+.lista-contacto{
+    align-self: center;
+}
+
