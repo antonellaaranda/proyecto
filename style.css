@@ -60,6 +60,9 @@ ul{
    justify-content: flex-end;
 
 }
+.tipo-nav{
+    font-family: 'Poppins', sans-serif;
+}
 
 /* propiedades links 
 a{
@@ -105,7 +108,7 @@ a:after {
     margin: auto;
     height: 2px;
     width: 0px;
-    transition: all .8s;
+    transition: all .4s;
     }
 a:hover:after {
     width: 100%;
@@ -133,6 +136,10 @@ a:hover:after {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+width-nav{
+    width: 70%;
+     
 }
 /*************mediaquery menu**************/
 @media screen and (max-width:450px){

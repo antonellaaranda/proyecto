@@ -10,17 +10,41 @@
 </head>
 <body class="grid-container" >
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid  ">             
-              <img src="images/traingulo150.png " alt="">
+        <div class="d-flex justify-content-end" >
+            <nav class=" navbar navbar-expand-lg navbar-light ">
+                          
+                <div class="container-fluid ">                         
+                
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">                   
+                                            
+                      <a class="nav-link" href="talles.html">
+                          <img src="images/user.png" alt="">
+                      </a>
+                      <a class="nav-link" href="contacto.html">
+                          <img src="images/shopping-bag.png" alt="">
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>  
+
+        <div class="d-flex justify-content-center " >
+        <img src="images/traingulo150.png " alt=""> 
+        </div>
+    
+        <nav class=" navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">   
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  <a class="nav-link" href="productos.html">Productos</a>
-                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav tipo-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>                
+                  <a class="nav-link" href="productos.html">Productos</a>    
+                  <a class="nav-link" href="nosotros.html"> Nosotros</a>
                   <a class="nav-link" href="talles.html">Talles</a>
                   <a class="nav-link" href="contacto.html">Contacto</a>
                   
@@ -28,6 +52,8 @@
               </div>
             </div>
           </nav>
+          </nav>
+        
         <!----
         <section class="section-logo">
             <nav class="nav-logo">
@@ -84,6 +110,44 @@
                 </p>
             </div >
             <div class="nosotros-slide">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/nosotros111.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Real Utopia</h5>
+                          <p>Busca tu estilo</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/nosotros222.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Real Utopia</h5>
+                          <p>Sentilo</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/nosotros333.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Real Utopia</h5>
+                          <p>Expresalo</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div><!----
                 <ul class="carrusel-nosotros" >
                     <li>
                         <img  class="img-nosotros" src="images/nosotros222.jpg" alt="img nosotros" >
@@ -94,7 +158,7 @@
                     <li>
                         <img class="img-nocotros" src="images/nosotros333.jpg" alt="img nosotros">
                     </li>
-                    </ul>
+                    </ul>-->
             </div>
         </section>
     </main>   
