@@ -1,0 +1,120 @@
+.header {
+  background-image: linear-gradient(rgb(148, 133, 121), white);
+  height: auto;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.header a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+.header a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all 0.4s;
+}
+.header a:hover:after {
+  width: 100%;
+  background: #333;
+}
+
+.footer {
+  background-image: linear-gradient(rgb(148, 133, 121), white);
+}
+.footer .div-footer {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+}
+.footer .div-footer .lista-footer {
+  list-style: none;
+  margin: 20px 10px;
+}
+.footer .div-footer a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+.footer .div-footer a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all 0.4s;
+}
+.footer .div-footer a:hover:after {
+  width: 100%;
+  background: #333;
+}
+.footer .div-footer .copyright {
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.seccion-slide {
+  background-color: antiquewhite;
+}
+.seccion-slide .div-slide {
+  width: 80%;
+  margin: auto;
+}
+
+.seccion-categoria {
+  background-color: antiquewhite;
+  width: 100%;
+}
+.seccion-categoria .div-encabezado {
+  font-family: "Poppins", sans-serif;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seccion-categoria .div-parrafo {
+  font-size: 20px;
+  width: 50%;
+  margin: auto;
+}
+.seccion-categoria .div-menu-main {
+  height: auto;
+  width: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.seccion-categoria .div-menu-main .lista-menu-main {
+  list-style: none;
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+.seccion-categoria .div-menu-main .lista-menu-main .item-categoria {
+  width: 90%;
+}
+.seccion-categoria .div-menu-main .lista-menu-main .item-categoria .img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.seccion-categoria .div-menu-main .lista-menu-main .item-categoria .img:hover {
+  transform: scale(1.2);
+}
+@media screen and (max-width: 450px) {
+  .seccion-categoria .lista-menu-main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto auto auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

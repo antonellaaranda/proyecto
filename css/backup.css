@@ -38,9 +38,6 @@ ul{
     
 }
 
-.navbar-flex{
-    display: flex;
-}
 
 /***************** navegador logo/iconos**************/   
 
@@ -184,20 +181,8 @@ width-nav{
 .img-slide{
     width: 100%;
 }
-.carrusel{
-    display: flex;
-    
-   width: 300%;
-   animation: carrusel 15s infinite alternate ;
-}
-@keyframes carrusel{
-0%{ margin-left: 0;}  
-33.3%{margin-left: 0;}
-38.3%{margin-left: -100%;}
-71.6%{margin-left: -100%;}
-76.6%{margin-left: -200%;}
-100%{margin-left: -200%;}
-}
+
+
 
 
 /******
@@ -234,10 +219,7 @@ width-nav{
     
 }
 
-.encabezado{
-    display: flex;
-    align-items: flex-end;
-}
+
 
 .div-parrafo{
     font-family: 'Poppins', sans-serif;
@@ -251,13 +233,8 @@ width-nav{
     width: 50%;           
 }
 
-.div-menu-main{
- height: auto;
- width: auto;
- display: flex;
- justify-content: center;
    
-}
+
 .lista-menu-main{
     margin-bottom: 100px;
     width: 90%;
