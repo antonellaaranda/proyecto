@@ -1,5 +1,8 @@
 
 @import '../base/variables';
+@import '../base/mapas';
+@import '../base/extends';
+@import '../base/mixin';
 
 .seccion-slide{
     
@@ -15,15 +18,14 @@
         .div-encabezado{
             font-family: $font;
             height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+         
 
         } 
         .div-parrafo{
-            font-size: 20px;
+            
             width: 50%;
             margin: auto;
+            
         }
         .div-menu-main{
             height: auto;
@@ -33,9 +35,9 @@
                 .lista-menu-main{
                     list-style: none;
                     width: 90%;
-                    display: grid;
+                    
                     grid-template-columns: auto auto auto;
-                    justify-items: center;
+     
                         .item-categoria{
                             width: 90%;
                                 .img{

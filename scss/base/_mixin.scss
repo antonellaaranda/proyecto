@@ -1,0 +1,10 @@
+
+
+@mixin grid ($grid, $justify){
+    display: $grid;
+    justify-items: $justify;
+}
+
+.lista-menu-main{
+    @include grid(grid, center )
+}
