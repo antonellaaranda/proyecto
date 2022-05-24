@@ -1,7 +1,20 @@
 
 @import '../base/variables';
 
+.grid-container{
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+
 .header{
+    grid-area: header ;
     background-image: $bg-header-footer;
     height: auto;
     width: 100%;
@@ -31,6 +44,7 @@
 
 
 .footer{
+    
     background-image: $bg-header-footer ;
         .div-footer{
                 font-family: $font;

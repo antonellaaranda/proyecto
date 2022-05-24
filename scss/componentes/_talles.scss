@@ -1,0 +1,25 @@
+@import'../base/variables';
+
+
+
+
+.seccion-talles{
+    background-color: $bg-color;
+    .h1-talles{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+       
+    }
+    
+    .div-talles{
+        display: flex;
+        justify-content: center;
+    }
+
+  
+   
+}
+
+
+

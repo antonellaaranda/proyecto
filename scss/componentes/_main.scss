@@ -4,6 +4,11 @@
 @import '../base/extends';
 @import '../base/mixin';
 
+
+
+.main{
+    grid-area: main;
+}
 .seccion-slide{
     
     background-color: $bg-color;
@@ -34,8 +39,7 @@
             margin-bottom: 100px;
                 .lista-menu-main{
                     list-style: none;
-                    width: 90%;
-                    
+                    width: 90%;                   
                     grid-template-columns: auto auto auto;
      
                         .item-categoria{

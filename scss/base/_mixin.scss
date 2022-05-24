@@ -8,3 +8,16 @@
 .lista-menu-main{
     @include grid(grid, center )
 }
+
+@mixin flex ($flex, $justify, $align ) {
+    display: $flex;
+    justify-content: $justify; 
+    align-items: $align;
+}
+
+.div-h1{
+    @include flex(flex,center,center)
+}
+.parrafo-nosotros{
+    @include flex(flex,center ,center )
+}

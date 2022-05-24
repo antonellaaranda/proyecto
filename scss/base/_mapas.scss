@@ -2,10 +2,8 @@
 
 
 $text:(
-    color-text:red,
-    font-size:20px,
-   
-
+    
+    font-size:20px,   
 );
 
 .div-parrafo{
@@ -13,3 +11,6 @@ $text:(
 }
 
 
+.parrafo-nosotros{
+    font-size: map-get($text, font-size );
+}

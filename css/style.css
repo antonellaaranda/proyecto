@@ -1,5 +1,14 @@
+.grid-container {
+  height: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
 .header {
-  background-image: linear-gradient(rgb(148, 133, 121), white);
+  grid-area: header;
+  background-image: linear-gradient(rgb(85, 85, 85), white);
   height: auto;
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -26,7 +35,7 @@
 }
 
 .footer {
-  background-image: linear-gradient(rgb(148, 133, 121), white);
+  background-image: linear-gradient(rgb(85, 85, 85), white);
 }
 .footer .div-footer {
   font-family: "Poppins", sans-serif;
@@ -61,8 +70,14 @@
   margin-left: 20px;
 }
 
-.div-parrafo {
-  color: red;
+.div-encabezado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafo-nosotros {
+  font-size: 20px;
 }
 
 .div-encabezado {
@@ -76,8 +91,24 @@
   justify-items: center;
 }
 
+.div-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafo-nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  grid-area: main;
+}
+
 .seccion-slide {
-  background-color: antiquewhite;
+  background-color: white;
 }
 .seccion-slide .div-slide {
   width: 80%;
@@ -85,7 +116,7 @@
 }
 
 .seccion-categoria {
-  background-color: antiquewhite;
+  background-color: white;
   width: 100%;
 }
 .seccion-categoria .div-encabezado {
@@ -126,8 +157,134 @@
   }
 }
 
-.div-parrafo {
-  color: red;
+.lista-menu-main {
+  display: grid;
+  justify-items: center;
+}
+
+.div-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafo-nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  grid-area: main;
+}
+.main .section-nosotros {
+  height: auto;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+.main .section-nosotros .div-h1 {
+  height: 100px;
+}
+.main .section-nosotros .div-h1 .h1-nosotros {
+  width: auto;
+}
+.main .section-nosotros .parrafo-nosotros {
+  width: 60%;
+  margin: auto;
+  height: 200px;
+}
+.main .section-nosotros .nosotros-slide {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.parrafo-nosotros {
+  font-size: 20px;
+}
+
+.lista-menu-main {
+  display: grid;
+  justify-items: center;
+}
+
+.div-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafo-nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  grid-area: main;
+}
+.main .section-nosotros {
+  height: auto;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+.main .section-nosotros .div-h1 {
+  height: 100px;
+}
+.main .section-nosotros .div-h1 .h1-nosotros {
+  width: auto;
+}
+.main .section-nosotros .parrafo-nosotros {
+  width: 60%;
+  margin: auto;
+  height: 200px;
+}
+.main .section-nosotros .nosotros-slide {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.seccion-talles {
+  background-color: white;
+}
+.seccion-talles .h1-talles {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.seccion-talles .div-talles {
+  display: flex;
+  justify-content: center;
+}
+
+.seccion-contacto {
+  background-color: white;
+}
+.seccion-contacto .imagen-contacto {
+  width: 70%;
+  margin: auto;
+}
+.seccion-contacto .imagen-contacto .img-contacto {
+  width: 100%;
+}
+.seccion-contacto .div-contacto {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+.seccion-contacto .div-contacto .lista-contacto {
+  align-self: center;
+}
+
+.div-productos {
+  background-color: white;
+}
+
+.bg-boton {
+  background-color: white !important;
+  color: black !important;
+  border: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */

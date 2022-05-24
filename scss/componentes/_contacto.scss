@@ -1,0 +1,29 @@
+@import'../base/variables';
+
+.seccion-contacto{
+    background-color: $bg-color;
+    .imagen-contacto{
+        width: 70%;  
+        margin: auto;
+        .img-contacto{    
+            width: 100%;
+        }
+    }
+    .div-contacto{
+        height: 300px; 
+        display: flex;
+        justify-content: center;  
+            
+.lista-contacto{
+    align-self: center;
+}
+
+        
+    }
+    
+}
+
+
+
+
+
