@@ -35,7 +35,7 @@
 }
 
 .footer {
-  background-image: linear-gradient(rgb(85, 85, 85), white);
+  background-image: linear-gradient(to top, rgb(85, 85, 85), white);
 }
 .footer .div-footer {
   font-family: "Poppins", sans-serif;

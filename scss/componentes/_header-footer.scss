@@ -15,7 +15,7 @@
 
 .header{
     grid-area: header ;
-    background-image: $bg-header-footer;
+    background-image: $bg-header;
     height: auto;
     width: 100%;
     font-family: $font;
@@ -45,7 +45,7 @@
 
 .footer{
     
-    background-image: $bg-header-footer ;
+    background-image: $bg-footer ;
         .div-footer{
                 font-family: $font;
                 display: grid;
